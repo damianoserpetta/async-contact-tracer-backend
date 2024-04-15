@@ -1,0 +1,268 @@
+/* general */
+
+:root {
+  --main-color: #f13c20;
+  --secundary-color: #d79922;
+  --third-color: #efe2ba;
+  --fourty-color: #c5cbe3;
+  --fifthy-color: #4056a1;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  color: #1c1c1c;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  transition: 0.4s;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.navbar-nav li a {
+  margin: auto;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.navbar-nav li a:hover {
+  color: #f13c20 !important;
+  transition: 0.3s;
+}
+
+#mainNav .nav-item {
+  width: 25%;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#cineNav .nav-item {
+  width: 20%;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.navbar-shrink {
+  background-color: white !important;
+  transition: 0.4s;
+}
+
+.navbar-shrink li a:hover {
+  transition: 0.3s;
+}
+
+/** First Div */
+#headIndex {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(232, 232, 232, 1) 100%
+  );
+}
+
+header.masthead {
+  height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: rgb(255, 255, 255);
+}
+header.masthead h1 {
+  color: #1c1c1c;
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+}
+
+header.masthead a {
+  background-color: #d79922;
+  border-color: #d79922;
+}
+
+header.masthead a:hover {
+  background-color: #f13c20;
+  border-color: #f13c20;
+}
+
+header.masthead hr.divider {
+  max-width: 450px;
+  border-width: 0.1rem;
+}
+/*** MAIN ***/
+#main h2 {
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#main h3 {
+  font-family: "Lobster", cursive;
+  font-size: 230%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.errh1 {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 800%;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  color: #17a2b8;
+}
+
+.errh2 {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 25px;
+  font-size: 400%;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  color: #17a2b8;
+}
+
+#main section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#contactsData {
+  padding-top: 50px;
+}
+
+#contactsData h3 {
+  padding-bottom: 30px;
+}
+
+/* delete blue outline from button */
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+/* footer */
+#footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(232, 232, 232, 1) 100%
+  );
+}
+
+#footer h5 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.my_col_footer11 {
+  margin-top: 10px;
+}
+
+.my_col_footer11 pre {
+  color: #1c1c1c;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.my_col_footer12 {
+  margin-top: 10px;
+}
+
+.my_col_footer12 pre {
+  color: #1c1c1c;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.my_col_footer13 {
+  margin-top: 10px;
+}
+
+.my_col_footer13 a {
+  color: #1c1c1c;
+  font-size: 14px;
+}
+
+.my_col_footer13 a:hover {
+  color: #57b8ff;
+}
+
+.my_col_footer13 ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.my_row_footer2 {
+  margin-top: 20px;
+}
+
+.my_row_footer2 p {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 18px;
+  color: #1c1c1c;
+  overflow: hidden;
+}
+
+pre {
+  font-family: "Raleway", sans-serif;
+}
+@media (max-width: 480px) {
+  body {
+    font-size: small;
+  }
+  #footer {
+    margin-top: 40px;
+    font-size: 80%;
+    text-align: center;
+  }
+  .my_col_footer13 ul {
+    list-style: none;
+  }
+}
+
+@media (max-width: 780px) {
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  header.masthead {
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+  header.masthead h1 {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 7rem;
+  }
+}
